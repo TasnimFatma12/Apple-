@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #81ecec;
+	font-size: 0.8rem;
+}
+
+.col-12, col-md-9 {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+
+.card{
+	width: 100%;
+	padding: 4em;
+	background-color: rgb(46,45,45);
+	color: white;
+	box-shadow: 0 4px 8px 2px rgba(0,0,0,0.5), 0 8px 10px 2 rgba(0,0,0,0.5);
+}
+
+.row{
+	margin: 0;
+}
+
+.path{
+	color: grey;
+	margin-bottom: 1rem; 
+}
+
+.path a{
+	color: #fff;
+}
+
+.info{
+	padding: 6vh 0vh;
+}
+.checked{
+	color: rgb(255, 217, 0);
+	margin-right: 10px;
+}
+
+img {
+	height: 100px;
+	width: 75%;
+	padding: 1rem;
+}
+
+.fa-heart{
+	font-size: 2rem;
+	color: #fff;
+	font-weight: lighter;
+}
+
+.fa-heart:hover{
+	color: rgb(255, 217, 0);
+}
+
+#reviews{
+	margin-left: 3vh;
+	color: grey;
+}
+
+.price{
+	margin-top: 2rem;
+}
+
+label.radio span{
+	padding: 1vh 4vh;
+	background: rgb(54,54,54);
+	color: grey;
+	display: inline-block;
+	margin-right: 2vh;
+}
+
+label.radio input:checked+span{
+	border: 1px solid #fff;
+	background: rgb(54,54,54);
+	margin-right: 2vh;
+	color: #fff;
+	display: inline-block;
+}
+
+label.radio input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+label.radio{
+	cursor: pointer;
+}
+
+carousel-control-prev{
+	width: 0; 
+}
+
+carousel-control-next{
+	left: 8vh;
+	right: unset;
+}
+
+.lower{
+	margin-top: 2rem;
+}
+
+/*.lower i{
+	padding: 2.5vh;
+	margin-right: 1vh;
+	color: grey;
+	border: 1px solid rgb(85, 85, 85);
+}
+*/
+
+.lower .btn{
+	background: transparent;
+	border-color: rgb(255, 217, 0);
+	color: rgb(255, 217, 0);
+	padding: 1.5vh 4vh;
+	border-radius: 2px;
+}
+
+.lower.btn:hover{
+	color: #fff;
+	border-color: #fff;
+}
+
+a:hover{
+	color: unset;
+	text-decoration: none;
+}
+
+@media(max-width: 768px){
+	.card{
+		width: 100%;
+		padding: 1.5rem;
+	}
+
+	.info{
+		padding: 0;
+	}
+
+	img{
+		padding: 2.5rem 0;
+	}
+
+	label.radio span{
+		padding: 1vh 3vh.
+	}
+
+	label.radio input:checked+span{
+		padding: 1vh 3vh;
+	}
+
+	.btn{
+		padding: 1vh;
+		font-size: 0.9rem;
+	}
+}
